@@ -1,9 +1,5 @@
 class TwoFer
-	def self.two_fer(name="")
-		if name.empty?
-			return "One for you, one for me."
-		else
-			return "One for #{name}, one for me."
-		end
+	def self.two_fer(name="you")
+		return "One for #{name}, one for me."
 	end
 end
