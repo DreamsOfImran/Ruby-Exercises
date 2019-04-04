@@ -8,10 +8,7 @@ class Series
 
     digits = @digits
     slice_array = []
-    until digits.length < slice_length
-      slice_array << digits[0..slice_length - 1]
-      digits = digits[1..-1]
-    end
+    digits.chars.each_cons(slice_length) { |arr| slice_array << arr.join }
     slice_array
   end
 end
